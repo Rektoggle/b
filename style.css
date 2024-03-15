@@ -1,0 +1,143 @@
+.title {
+    width: 100vw;
+    height: 100px;
+    color: rgba(255, 255, 255, .7);
+    z-index:23 ;
+    position: absolute;
+    display: flex;
+}
+.title i{
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.buttom-container, .cora-container {
+    margin-left: 40px;
+
+}
+
+.cora-container a i {
+    color: rgba(255, 0, 0, 0.8);
+}
+
+.N-container, .K-container {
+    float: right;
+    margin-right: 40px;
+}
+
+.title__titulo{
+    font-size: 50px;
+    padding: auto;
+    margin: auto;
+}
+
+
+.title div {
+    display: inline-block;
+    padding: 15px;
+    
+}
+.buttom-container a i, .K-container a i, .N-container a i {
+    
+    color: rgba(255, 255, 255, .7);
+}
+
+
+body  {
+    overflow: hidden;
+    top: 0;
+}
+
+
+
+.fondo img {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    
+}
+
+.fondo__opacity {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5)  ;
+    position: absolute;
+   
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+.container {
+   display: flex;
+   height: 450px;
+   width: 250px;
+   border: 1px solid rgba(255, 255, 255, 0.7);
+   border-radius: 5%;
+   position: absolute;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   margin: 100px auto;
+   margin-top: 200px;
+   background-color: rgba(0, 0, 0, 0.5);
+
+   
+}
+* {
+    color: rgba(255, 255, 255, .7);
+    font-family: 'Dancing Script', cursive;
+}
+.container div {
+    display: flex;
+    font-size: 30px;
+    margin: 20px;
+    justify-content: center;
+    color: rgba(255, 255, 255, .7);
+
+}
+.container div a {
+    text-decoration: none;
+}
+
+.fondo__responsive {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1157px) {
+
+    .fondo {
+        display: none;
+    }
+
+    .fondo__opacity {
+        display: none;
+    }
+
+    .fondo__responsive {
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+    .fondo__responsive img{
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+    .body-container {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
+}
